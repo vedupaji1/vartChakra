@@ -1,0 +1,19 @@
+{
+  "name": "varttextlab",
+  "version": "1.0.0",
+  "description": "This App Is HTML Text Editor",
+  "main": "app.js",
+  "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node app.js",
+     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client" 
+  },
+  "author": "Vedupaji",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "http": "0.0.1-security",
+    "node-fetch": "^3.1.0",
+    "socket.io": "^4.4.0"
+  }
+}
